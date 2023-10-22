@@ -1,0 +1,105 @@
+﻿@model UsersInOrOutViewModel
+
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<div class="ibox-content">
+    <div class="row wrapper border-bottom white-bg page-heading">
+        <div class="col-lg-9">
+            <h2>Admin</h2>
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                    <a href="/admin/index">Admin</a>
+                </li>
+                <li class="breadcrumb-item active">
+                    <strong>Rol Bilgi Güncelle</strong>
+                </li>
+            </ol>
+
+        </div>
+    </div>
+</div>
+<h4 class="text-center">Rol Bilgi Güncelle</h4>
+<hr />
+<div class="row" style="position:center;">
+    <form asp-action="Edit" asp-controller="Role" method="post">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <input type="hidden" name="RoleId" value="@Model.Role.Id" />
+        <input type="hidden" name="RoleName" value="@Model.Role.Name" />
+        <h5 class="bg-primary text-white">@Model.Role.Name rolünde olan kullanıcılar</h5>
+
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Username</th>
+                    <th>Email</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @if (@Model.UsersInRole.Count() > 0)
+                {
+                    @foreach (var user in Model.UsersInRole)
+                    {
+                        <tr>
+                            <td>@user.Name</td>
+                            <td>@user.Email</td>
+                            <td>
+                                <input type="checkbox" name="UsersIdsToDelete" value="@user.Id">
+                            </td>
+                        </tr>
+                    }
+                }
+                else
+                {
+                    <tr>
+                        <td colspan="2">
+                            Role ait kullanıcı bulunmamaktadır!
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+        <br /><hr /><br />
+        <table class="table table-bordered">
+            <h5 class="bg-primary text-white">@Model.Role.Name rolünde olmayan kullanıcılar</h5>
+            <thead>
+                <tr>
+                    <th>Username</th>
+                    <th>Email</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @if (@Model.UsersOutRole.Count() > 0)
+                {
+                    @foreach (var user in Model.UsersOutRole)
+                    {
+                        <tr>
+                            <td>@user.Name</td>
+                            <td>@user.Email</td>
+                            <td>
+                                <input type="checkbox" name="UsersIdsToAdd" value="@user.Id">
+                            </td>
+                        </tr>
+                    }
+                }
+                else
+                {
+                    <tr>
+                        <td colspan="2">
+                            Bütün kullanıcılar bu role kayıtlıdır.
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+        <div class="mt-2 text-center">
+            <input class="btn btn-primary" type="submit" value="Kayıt Et" />
+        </div>
+    </form>
+</div>
+
+

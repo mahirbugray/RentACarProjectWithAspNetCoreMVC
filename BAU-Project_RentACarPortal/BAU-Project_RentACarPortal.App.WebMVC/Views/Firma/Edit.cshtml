@@ -1,0 +1,46 @@
+﻿@model FirmaViewModel
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<div class="container">
+    <div class="col-md-6 mx-auto">
+        <div class="login p-5 bg-light mx-auto mw-100" style="border-radius:20px; border: 1px solid #ccc;">
+            <h4 class="tittle text-center">Firma Bilgi Güncelleme</h4>
+            <form asp-action="Edit" asp-controller="Firma" method="post">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-group">
+                    <label asp-for="FirmaAdi" class="control-label">Firma Adı</label>
+                    <input asp-for="FirmaAdi" class="form-control" />
+                    <span asp-validation-for="FirmaAdi" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="FirmaAdresi" class="control-label">Firma Adresi</label>
+                    <input asp-for="FirmaAdresi" class="form-control" />
+                    <span asp-validation-for="FirmaAdresi" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="FirmaTel" class="control-label">Firma Telefon</label>
+                    <input asp-for="FirmaTel" class="form-control" />
+                    <span asp-validation-for="FirmaTel" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Fax" class="control-label">Firma Faks</label>
+                    <input asp-for="Fax" class="form-control" />
+                    <span asp-validation-for="Fax" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Email" class="control-label">Firma E-Mail</label>
+                    <input asp-for="Email" class="form-control" />
+                    <span asp-validation-for="Email" class="text-danger"></span>
+                </div>
+                <div class="form-group text-center">
+                    <input type="submit" value="Güncelle" class="btn btn-primary" />
+                </div>
+            </form>
+
+        </div>
+    </div>
+</div>
+

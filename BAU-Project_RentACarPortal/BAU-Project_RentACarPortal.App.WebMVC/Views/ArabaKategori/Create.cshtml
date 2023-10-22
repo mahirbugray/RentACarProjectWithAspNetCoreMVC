@@ -1,0 +1,42 @@
+﻿@model KategoriViewModel
+
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<div class="ibox-content">
+    <div class="row wrapper border-bottom white-bg page-heading">
+        <div class="col-lg-9">
+            <h2>Admin</h2>
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                    <a href="/admin/index">Admin</a>
+                </li>
+                <li class="breadcrumb-item active">
+                    <strong>Araba Kategori</strong>
+                </li>
+                <li class="breadcrumb-item active">
+                    <strong>Araba Kategori Ekle</strong>
+                </li>
+            </ol>
+        </div>
+    </div>
+    <div class="col-md-12 mx-auto">
+        <h4 class="tittle text-center">Yeni Araba Kategori</h4>
+        <div class="login p-5 bg-light mx-auto mw-100">
+            <form asp-action="Create" asp-controller="ArabaKategori" method="post">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-group">
+                    <label asp-for="KategoriAdi" class="control-label"></label>
+                    <input asp-for="KategoriAdi" class="form-control" />
+                    <span asp-validation-for="KategoriAdi" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Yeni Araba Kategori Ekle" class="btn btn-primary" />
+                </div>
+            </form>
+
+        </div>
+    </div>
+</div>

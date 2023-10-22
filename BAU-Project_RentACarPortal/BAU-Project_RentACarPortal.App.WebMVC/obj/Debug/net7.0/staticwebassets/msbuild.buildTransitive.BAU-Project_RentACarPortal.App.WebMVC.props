@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\BAU-Project_RentACarPortal.App.WebMVC.props" />
+</Project>

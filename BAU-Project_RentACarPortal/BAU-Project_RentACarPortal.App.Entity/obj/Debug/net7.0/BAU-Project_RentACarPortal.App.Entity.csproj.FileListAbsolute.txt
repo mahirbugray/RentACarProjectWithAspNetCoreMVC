@@ -1,0 +1,34 @@
+C:\Users\mahir\Desktop\BAU Eğitim\BAU-Proje\BAU-Project_RentACarPortal\BAU-Project_RentACarPortal.App.Entity\bin\Debug\net7.0\BAU-Project_RentACarPortal.App.Entity.deps.json
+C:\Users\mahir\Desktop\BAU Eğitim\BAU-Proje\BAU-Project_RentACarPortal\BAU-Project_RentACarPortal.App.Entity\bin\Debug\net7.0\BAU-Project_RentACarPortal.App.Entity.dll
+C:\Users\mahir\Desktop\BAU Eğitim\BAU-Proje\BAU-Project_RentACarPortal\BAU-Project_RentACarPortal.App.Entity\bin\Debug\net7.0\BAU-Project_RentACarPortal.App.Entity.pdb
+C:\Users\mahir\Desktop\BAU Eğitim\BAU-Proje\BAU-Project_RentACarPortal\BAU-Project_RentACarPortal.App.Entity\obj\Debug\net7.0\BAU-Project_RentACarPortal.App.Entity.csproj.AssemblyReference.cache
+C:\Users\mahir\Desktop\BAU Eğitim\BAU-Proje\BAU-Project_RentACarPortal\BAU-Project_RentACarPortal.App.Entity\obj\Debug\net7.0\BAU-Project_RentACarPortal.App.Entity.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mahir\Desktop\BAU Eğitim\BAU-Proje\BAU-Project_RentACarPortal\BAU-Project_RentACarPortal.App.Entity\obj\Debug\net7.0\BAU-Project_RentACarPortal.App.Entity.AssemblyInfoInputs.cache
+C:\Users\mahir\Desktop\BAU Eğitim\BAU-Proje\BAU-Project_RentACarPortal\BAU-Project_RentACarPortal.App.Entity\obj\Debug\net7.0\BAU-Project_RentACarPortal.App.Entity.AssemblyInfo.cs
+C:\Users\mahir\Desktop\BAU Eğitim\BAU-Proje\BAU-Project_RentACarPortal\BAU-Project_RentACarPortal.App.Entity\obj\Debug\net7.0\BAU-Project_RentACarPortal.App.Entity.csproj.CoreCompileInputs.cache
+C:\Users\mahir\Desktop\BAU Eğitim\BAU-Proje\BAU-Project_RentACarPortal\BAU-Project_RentACarPortal.App.Entity\obj\Debug\net7.0\BAU-Project_RentACarPortal.App.Entity.dll
+C:\Users\mahir\Desktop\BAU Eğitim\BAU-Proje\BAU-Project_RentACarPortal\BAU-Project_RentACarPortal.App.Entity\obj\Debug\net7.0\refint\BAU-Project_RentACarPortal.App.Entity.dll
+C:\Users\mahir\Desktop\BAU Eğitim\BAU-Proje\BAU-Project_RentACarPortal\BAU-Project_RentACarPortal.App.Entity\obj\Debug\net7.0\BAU-Project_RentACarPortal.App.Entity.pdb
+C:\Users\mahir\Desktop\BAU Eğitim\BAU-Proje\BAU-Project_RentACarPortal\BAU-Project_RentACarPortal.App.Entity\obj\Debug\net7.0\ref\BAU-Project_RentACarPortal.App.Entity.dll
+C:\Users\ROG\Desktop\BahcesehirEgitim\BAU-Proje\BAU-Project_RentACarPortal\BAU-Project_RentACarPortal.App.Entity\bin\Debug\net7.0\BAU-Project_RentACarPortal.App.Entity.deps.json
+C:\Users\ROG\Desktop\BahcesehirEgitim\BAU-Proje\BAU-Project_RentACarPortal\BAU-Project_RentACarPortal.App.Entity\bin\Debug\net7.0\BAU-Project_RentACarPortal.App.Entity.dll
+C:\Users\ROG\Desktop\BahcesehirEgitim\BAU-Proje\BAU-Project_RentACarPortal\BAU-Project_RentACarPortal.App.Entity\bin\Debug\net7.0\BAU-Project_RentACarPortal.App.Entity.pdb
+C:\Users\ROG\Desktop\BahcesehirEgitim\BAU-Proje\BAU-Project_RentACarPortal\BAU-Project_RentACarPortal.App.Entity\obj\Debug\net7.0\BAU-Project_RentACarPortal.App.Entity.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ROG\Desktop\BahcesehirEgitim\BAU-Proje\BAU-Project_RentACarPortal\BAU-Project_RentACarPortal.App.Entity\obj\Debug\net7.0\BAU-Project_RentACarPortal.App.Entity.AssemblyInfoInputs.cache
+C:\Users\ROG\Desktop\BahcesehirEgitim\BAU-Proje\BAU-Project_RentACarPortal\BAU-Project_RentACarPortal.App.Entity\obj\Debug\net7.0\BAU-Project_RentACarPortal.App.Entity.AssemblyInfo.cs
+C:\Users\ROG\Desktop\BahcesehirEgitim\BAU-Proje\BAU-Project_RentACarPortal\BAU-Project_RentACarPortal.App.Entity\obj\Debug\net7.0\BAU-Project_RentACarPortal.App.Entity.csproj.CoreCompileInputs.cache
+C:\Users\ROG\Desktop\BahcesehirEgitim\BAU-Proje\BAU-Project_RentACarPortal\BAU-Project_RentACarPortal.App.Entity\obj\Debug\net7.0\BAU-Project_RentACarPortal.App.Entity.dll
+C:\Users\ROG\Desktop\BahcesehirEgitim\BAU-Proje\BAU-Project_RentACarPortal\BAU-Project_RentACarPortal.App.Entity\obj\Debug\net7.0\refint\BAU-Project_RentACarPortal.App.Entity.dll
+C:\Users\ROG\Desktop\BahcesehirEgitim\BAU-Proje\BAU-Project_RentACarPortal\BAU-Project_RentACarPortal.App.Entity\obj\Debug\net7.0\BAU-Project_RentACarPortal.App.Entity.pdb
+C:\Users\ROG\Desktop\BahcesehirEgitim\BAU-Proje\BAU-Project_RentACarPortal\BAU-Project_RentACarPortal.App.Entity\obj\Debug\net7.0\ref\BAU-Project_RentACarPortal.App.Entity.dll
+C:\Users\ROG\Desktop\BAU-Project_RentACarPortal\BAU-Project_RentACarPortal.App.Entity\bin\Debug\net7.0\BAU-Project_RentACarPortal.App.Entity.deps.json
+C:\Users\ROG\Desktop\BAU-Project_RentACarPortal\BAU-Project_RentACarPortal.App.Entity\bin\Debug\net7.0\BAU-Project_RentACarPortal.App.Entity.dll
+C:\Users\ROG\Desktop\BAU-Project_RentACarPortal\BAU-Project_RentACarPortal.App.Entity\bin\Debug\net7.0\BAU-Project_RentACarPortal.App.Entity.pdb
+C:\Users\ROG\Desktop\BAU-Project_RentACarPortal\BAU-Project_RentACarPortal.App.Entity\obj\Debug\net7.0\BAU-Project_RentACarPortal.App.Entity.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ROG\Desktop\BAU-Project_RentACarPortal\BAU-Project_RentACarPortal.App.Entity\obj\Debug\net7.0\BAU-Project_RentACarPortal.App.Entity.AssemblyInfoInputs.cache
+C:\Users\ROG\Desktop\BAU-Project_RentACarPortal\BAU-Project_RentACarPortal.App.Entity\obj\Debug\net7.0\BAU-Project_RentACarPortal.App.Entity.AssemblyInfo.cs
+C:\Users\ROG\Desktop\BAU-Project_RentACarPortal\BAU-Project_RentACarPortal.App.Entity\obj\Debug\net7.0\BAU-Project_RentACarPortal.App.Entity.csproj.CoreCompileInputs.cache
+C:\Users\ROG\Desktop\BAU-Project_RentACarPortal\BAU-Project_RentACarPortal.App.Entity\obj\Debug\net7.0\BAU-Project_RentACarPortal.App.Entity.dll
+C:\Users\ROG\Desktop\BAU-Project_RentACarPortal\BAU-Project_RentACarPortal.App.Entity\obj\Debug\net7.0\refint\BAU-Project_RentACarPortal.App.Entity.dll
+C:\Users\ROG\Desktop\BAU-Project_RentACarPortal\BAU-Project_RentACarPortal.App.Entity\obj\Debug\net7.0\BAU-Project_RentACarPortal.App.Entity.pdb
+C:\Users\ROG\Desktop\BAU-Project_RentACarPortal\BAU-Project_RentACarPortal.App.Entity\obj\Debug\net7.0\ref\BAU-Project_RentACarPortal.App.Entity.dll

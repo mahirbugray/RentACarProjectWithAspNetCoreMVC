@@ -1,0 +1,64 @@
+﻿@model ArabaViewModel
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<div class="ibox-content">
+    <div class="row wrapper border-bottom white-bg page-heading">
+        <div class="col-lg-9">
+            <h2>Admin</h2>
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                    <a href="/admin/index">Admin</a>
+                </li>
+                <li class="breadcrumb-item active">
+                    <strong>Araba</strong>
+                </li>
+                <li class="breadcrumb-item active">
+                    <strong>Araba Güncelle</strong>
+                </li>
+            </ol>
+        </div>
+    </div>
+    <div class="col-md-12 mx-auto">
+        <h4 class="tittle text-center">Araba Bilgilerini Güncelle</h4>
+        <div class="login p-5 bg-light mx-auto mw-100">
+            <form asp-action="Edit" asp-controller="Arabalar" method="post" enctype="multipart/form-data">
+                <input type="hidden" asp-for="Resim" />
+                <input type="hidden" asp-for="Id"/>
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-group">
+                    <label asp-for="SaatlikUcret" class="control-label">Ücret</label>
+                    <input asp-for="SaatlikUcret" type="text" class="form-control" />
+                    <span asp-validation-for="SaatlikUcret" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Resim" class="control-label">Araba Resmi</label>
+                    <input asp-for="Resim" class="form-control" type="file" name="formFile" />
+                    <img src="@Model.Resim" />
+                    <span asp-validation-for="Resim" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="SigortaId" class="control-label">Sigorta</label>
+                    <select asp-for="SigortaId" class="form-control" asp-items="@ViewBag.Sigorta">
+                        <option selected>Sigorta Seçiniz</option>
+                    </select>
+                    <span asp-validation-for="SigortaId" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="IsAvailable" class="control-label">Araba Kirada Mı?</label>
+                    <input asp-for="IsAvailable" class="form-control" type="text"/>
+                    <span asp-validation-for="IsAvailable" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Araba Bilgi Güncelle" class="btn btn-primary" />
+                </div>
+            </form>
+
+        </div>
+    </div>
+</div>
+
+
+

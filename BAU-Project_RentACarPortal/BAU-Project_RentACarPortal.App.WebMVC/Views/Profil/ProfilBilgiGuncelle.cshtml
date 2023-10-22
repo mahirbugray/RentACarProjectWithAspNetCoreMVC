@@ -1,0 +1,95 @@
+﻿@model UserViewModel
+@{
+    ViewData["Title"] = "ProfilBilgiGuncelle";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="main-body">
+    <section class="hero-wrap hero-wrap-2 js-fullheight" style="background-image: url('/carbook-master/images/bg_3.jpg');" data-stellar-background-ratio="0.5">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row no-gutters slider-text js-fullheight align-items-end justify-content-start">
+                <div class="col-md-9 ftco-animate pb-5">
+                    <p class="breadcrumbs"><span class="mr-2"><a asp-action="Index" asp-controller="Anasayfa">Anasayfa <i class="ion-ios-arrow-forward"></i></a></span> <span><a asp-action="Index" asp-controller="Profil">Profilim <i class="ion-ios-arrow-forward"></i></a></span></p> 
+                    <h1 class="mb-3 bread">Profil Bilgilerini Güncelle</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Breadcrumb -->
+    <!-- /Breadcrumb -->
+    <br />
+    <br />
+    <br />
+<h2 class="text-center">Profil Bilgilerini Güncelle</h2>
+
+    <div class="col-md-12 mx-auto">
+        <h4 class="tittle text-center">Araba Bilgilerini Güncelle</h4>
+        <div class="login p-5 bg-light mx-auto mw-100">
+            <form asp-action="ProfilBilgiGuncelle" asp-controller="Profil" method="post">
+                <input asp-for="Id" class="form-control" type="hidden"/>
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-group">
+                    <label asp-for="Name" class="control-label">İsim</label>
+                    <input asp-for="Name" class="form-control" style="background-color:lightgray;" readonly />
+                    <span asp-validation-for="Name" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Surname" class="control-label">Soyisim</label>
+                    <input asp-for="Surname" class="form-control" style="background-color:lightgray;" readonly />
+                    <span asp-validation-for="Surname" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Username" class="control-label">Kullanıcı Adı</label>
+                    <input asp-for="Username" class="form-control" style="background-color:lightgray;" readonly />
+                    <span asp-validation-for="Username" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="DogumYili" class="control-label">Doğum Tarihi</label>
+                    <input asp-for="DogumYili" type="date" class="form-control" style="background-color:lightgray;" readonly />
+                    <span asp-validation-for="DogumYili" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="TCKNo" class="control-label">TC Kimlik Numarası</label>
+                    <input asp-for="TCKNo" type="text" class="form-control" style="background-color:lightgray;" pattern="\d{11}" maxlength="11" readonly />
+                    <span asp-validation-for="TCKNo" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="PhoneNumber" class="control-label">Telefon Numarası</label>
+                    <input asp-for="PhoneNumber" type="tel" class="form-control" maxlength="11" required />
+                    <span asp-validation-for="PhoneNumber" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Adres" class="control-label">Adres</label>
+                    <input asp-for="Adres" class="form-control" />
+                    <span asp-validation-for="Adres" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Email" class="control-label">E Mail</label>
+                    <input asp-for="Email" type="email" class="form-control" />
+                    <span asp-validation-for="Email" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label name="SuankiSifre" class="control-label">Şuanki Şifre</label>
+                    <input name="SuankiSifre" type="password" class="form-control" />
+                    <span name="SuankiSifre" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="YeniSifre" class="control-label">Yeni Şifre</label>
+                    <input asp-for="YeniSifre" type="password" class="form-control" />
+                    <span asp-validation-for="YeniSifre" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="YeniSifreTekrar" class="control-label">Yeni Şifre Tekrar</label>
+                    <input asp-for="YeniSifreTekrar" type="password" class="form-control" />
+                    <span asp-validation-for="YeniSifreTekrar" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-outline-success">Profil Bilgi Güncelle</button>
+                </div>
+            </form>
+
+        </div>
+    </div>
+    <br />
+    <br />
+    <br />

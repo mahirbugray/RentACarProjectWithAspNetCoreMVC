@@ -1,0 +1,26 @@
+﻿@model KategoriViewModel
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<div class="container">
+    <div class="col-md-6 mx-auto">
+        <div class="login p-5 bg-light mx-auto mw-100" style="border-radius:20px; border: 1px solid #ccc;">
+            <h4 class="tittle text-center">Araba Kategori Bilgi Güncelleme</h4>
+            <form asp-action="Edit" asp-controller="ArabaKategori" method="post">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-group">
+                    <label asp-for="KategoriAdi" class="control-label">Araba Kategori Adı</label>
+                    <input asp-for="KategoriAdi" class="form-control" />
+                    <span asp-validation-for="KategoriAdi" class="text-danger"></span>
+                </div>
+                <div class="form-group text-center">
+                    <input type="submit" value="Güncelle" class="btn btn-primary" />
+                </div>
+            </form>
+
+        </div>
+    </div>
+</div>
+

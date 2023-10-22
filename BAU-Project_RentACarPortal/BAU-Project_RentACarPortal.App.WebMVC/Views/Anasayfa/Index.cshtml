@@ -1,0 +1,175 @@
+﻿@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="hero-wrap ftco-degree-bg" style="background-image: url('/carbook-master/images/bg_1.jpg');" data-stellar-background-ratio="0.5">
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="row no-gutters slider-text justify-content-start align-items-center justify-content-center">
+            <div class="col-lg-8 ftco-animate">
+                <div class="text w-100 text-center mb-md-5 pb-md-5">
+                    <h1 class="mb-4">Araç Kiralamanın Hızlı ve Kolay Yolu</h1>
+                    <p style="font-size: 18px;">75+ Firmamızla siz müşterilerimiz için en iyi hizmeti vermek için uğraşıyoruz.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section class="ftco-section ftco-no-pt bg-light">
+    <div class="container">
+        <div class="row no-gutters">
+            <div class="col-md-12	featured-top">
+                <div class="row no-gutters">
+                    <div class="col-md-12 d-flex align-items-center">
+                        <div class="services-wrap rounded-right w-100">
+                            <h3 class="heading-section mb-4">Araç Kiralamanın En İyi Yolu</h3>
+                            <div class="row d-flex mb-4">
+                                <div class="col-md-6 d-flex align-self-stretch ftco-animate">
+                                    <div class="services w-100 text-center">
+                                        <div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-handshake"></span></div>
+                                        <div class="text w-100">
+                                            <h3 class="heading mb-2">Sizin İçin En Uygun Teklifi Seçin</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 d-flex align-self-stretch ftco-animate">
+                                    <div class="services w-100 text-center">
+                                        <div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-rent"></span></div>
+                                        <div class="text w-100">
+                                            <h3 class="heading mb-2">Kiralamak İstediğiniz Arabayı Rezerve Edin</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <p><a asp-action="Index" asp-controller="Arabalar" class="btn btn-primary py-3 px-4">Size Uygun Araçları Görüntüleyin</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</section>
+
+
+@await Component.InvokeAsync("OneCikanlar")
+
+<section class="ftco-section ftco-about">
+    <div class="container">
+        <div class="row no-gutters">
+            <div class="col-md-6 p-md-5 img img-2 d-flex justify-content-center align-items-center" style="background-image: url(/carbook-master/images/about.jpg);">
+            </div>
+            <div class="col-md-6 wrap-about ftco-animate">
+                <div class="heading-section heading-section-white pl-md-5">
+                    <h2 class="subheading">Carbook'a Hoşgeldiniz</h2>
+                    <span class="mb-4 subheading">Neden Biz? </span>
+
+                    <p>
+                        Geniş Araç Filosu: Müşterilerimize farklı ihtiyaçlarını karşılayabilecekleri geniş bir araç seçeneği sunuyoruz. Küçük, orta, büyük, lüks, SUV ve daha birçok kategoride araçları portföyümüzde bulunduruyoruz.
+
+                        Güvenlik ve Bakım: Müşteri güvenliği bizim için önceliklidir. Araçlarımız düzenli olarak bakıma alınır ve en yüksek güvenlik standartlarına uygun olarak korunur.
+
+                        Uygun Fiyatlar: Ekonomik fiyatlarla yüksek kaliteli araç kiralama hizmeti sunarız. Müşterilerimize bütçelerine uygun seçenekler sunmak için çalışıyoruz.
+
+                        Müşteri Memnuniyeti: Müşterilerimizin memnuniyeti bizim için en önemli önceliktir. Profesyonel ve yardımsever personelimiz, her müşteriye kişiselleştirilmiş hizmet sunar.
+
+                        Kolay Rezervasyon: Araç kiralamak bizimle kolaydır. Çevrimiçi rezervasyon sistemimizle hızlı ve basit bir şekilde araç kiralayabilirsiniz.
+                    </p>
+                    <p><a asp-action="Index" asp-controller="Arabalar" class="btn btn-primary py-3 px-4">Araç Ara</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="ftco-section">
+    <div class="container">
+        <div class="row justify-content-center mb-5">
+            <div class="col-md-7 text-center heading-section ftco-animate">
+                <span class="subheading">Hizmetlerimiz</span>
+                <h2 class="mb-3">Sağladığımız İmkanlar</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="services services-2 w-100 text-center">
+                    <div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-wedding-car"></span></div>
+                    <div class="text w-100">
+                        <h3 class="heading mb-2">YENİ ARAÇLAR</h3>
+                        <p>Araç Kiralama için yeni araçlarla konforlu bir yolculuğun tadını çıkarın. Rent A Car Avantajlarımız için bizi arayınız.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="services services-2 w-100 text-center">
+                    <div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-transportation"></span></div>
+                    <div class="text w-100">
+                        <h3 class="heading mb-2">GÜVENLİ ARAÇLAR</h3>
+                        <p>Araç Kiralama hizmetimizde güvenli ve konforlu araçlarımız ile yolculukların tadını çıkarın. Avantajlarımız için bizi arayınız.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="services services-2 w-100 text-center">
+                    <div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-car"></span></div>
+                    <div class="text w-100">
+                        <h3 class="heading mb-2">EN UYGUN FİYAT</h3>
+                        <p>Araç kiralama için en konforlu araçları en uygun fiyata bizden kiralayabilirsiniz. Fiyat avantajlarımız ve kampanyalarımız için bizi arayınız.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="services services-2 w-100 text-center">
+                    <div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-transportation"></span></div>
+                    <div class="text w-100">
+                        <h3 class="heading mb-2">ANINDA TESLİM</h3>
+                        <p>Filomuzdaki kiraladığınız tüm araçları kiralağınız an belirlenen saat içerisinde teslim alabilirsiniz..</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<section class="ftco-counter ftco-section img bg-light" id="section-counter">
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-lg-3 justify-content-center counter-wrap ftco-animate">
+                <div class="block-18">
+                    <div class="text text-border d-flex align-items-center">
+                        <strong class="number" data-number="60">0</strong>
+                        <span>Yıllık <br>Deneyim</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 justify-content-center counter-wrap ftco-animate">
+                <div class="block-18">
+                    <div class="text text-border d-flex align-items-center">
+                        <strong class="number" data-number="@ViewBag.Arabalar">0</strong>
+                        <span>Araba <br>Sayımız</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 justify-content-center counter-wrap ftco-animate">
+                <div class="block-18">
+                    <div class="text text-border d-flex align-items-center">
+                        <strong class="number" data-number="@ViewBag.Musteriler">0</strong>
+                        <span>Mutlu <br>Müşteriler</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 justify-content-center counter-wrap ftco-animate">
+                <div class="block-18">
+                    <div class="text d-flex align-items-center">
+                        <strong class="number" data-number="@ViewBag.Firmalar">0</strong>
+                        <span>Çalıştığımız <br>Firmalar</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+

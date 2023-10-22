@@ -1,0 +1,78 @@
+﻿@model ArabaDetailsViewModel
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<div class="ibox-content">
+    <div class="row wrapper border-bottom white-bg page-heading">
+        <div class="col-lg-9">
+            <h2>Admin</h2>
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                    <a href="/admin/index">Admin</a>
+                </li>
+                <li class="breadcrumb-item active">
+                    <strong>Araba Detayları</strong>
+                </li>
+            </ol>
+
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-3">
+            <table class="footable table table-stripped toggle-arrow-tiny">
+                <thead>
+                    <tr>
+                        <th data-toggle="true">Araba Yakıt Türü</th>
+                    </tr>
+                    <tr>
+                        <td>@Model.ArabaDetay.Yakıt</td>
+                    </tr>
+                    <tr>
+                        <th data-toggle="true">Araba Rengi</th>
+                    </tr>
+                    <tr>
+                        <td>@Model.ArabaDetay.Renk</td>
+                    </tr>
+                    <tr>
+                        <th data-toggle="true">Araba Kilometresi</th>
+                    </tr>
+                    <tr>
+                        <td>@Model.ArabaDetay.Km</td>
+                    </tr>
+                    <tr>
+                        <th data-toggle="true">Araba Vites Türü</th>
+                    </tr>
+                    <tr>
+                        <td>@Model.ArabaDetay.Vites</td>
+                    </tr>
+                    <tr>
+                        <th data-toggle="true">Araba Sigorta</th>
+                    </tr>
+                    <tr>
+                        <td>@Model.Araba.Sigorta.SigortaAdi</td>
+                    </tr>
+                    <tr>
+                        <th data-toggle="true">Araba Kategorisi</th>
+                    </tr>
+                    <tr>
+                        <td>@Model.Araba.ArabaKategori.KategoriAdi</td>
+                    </tr>
+                    <tr>
+                        <th data-toggle="true">Araba Açıklama</th>
+                    </tr>
+                    <tr>
+                        <td>@Model.ArabaDetay.Aciklama</td>  
+                    </tr>
+                </thead>
+            </table>
+        </div>
+        <div class="col-md-5 m-3">
+            <img src="@Model.Araba.Resim" width="450px;" />
+        </div>
+    </div>
+    <div>
+        <a class="btn btn-info" asp-action="AdminIndex" asp-controller="Arabalar">Geri Dön</a>
+    </div>
+</div>

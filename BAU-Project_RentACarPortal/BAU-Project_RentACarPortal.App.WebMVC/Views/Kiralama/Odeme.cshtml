@@ -1,0 +1,123 @@
+﻿@model UserViewModel
+@{
+    ViewData["Title"] = "Odeme";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<section class="hero-wrap hero-wrap-2 js-fullheight" style="background-image: url('/carbook-master/images/bg_3.jpg');" data-stellar-background-ratio="0.5">
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="row no-gutters slider-text js-fullheight align-items-end justify-content-start">
+            <div class="col-md-9 ftco-animate pb-5">
+                <p class="breadcrumbs"><span class="mr-2"><a asp-action="Index" asp-controller="Anasayfa">Anasayfa <i class="ion-ios-arrow-forward"></i></a></span> <span>Ödeme <i class="ion-ios-arrow-forward"></i></span></p>
+                <h1 class="mb-3 bread">Ödeme Onay</h1>
+
+            </div>
+        </div>
+    </div>
+</section>
+<br />
+<br />
+<br />
+<h2 class="text-center">Ödeme Onay Sayfası</h2>
+@if (TempData["mesaj"] != null)
+{
+    <alert class="alert alert-danger">
+        @TempData["mesaj"]
+    </alert>
+}
+<div class="container mt-4">
+
+    <div class="row">
+        <div class="col-md-5 bg-light p-4 rounded">
+            <h3 class="mb-4">Müşteri Bilgileri</h3>
+            <div class="form-group">
+                <label asp-for="@Model.Name" class="control-label"></label>
+                <input asp-for="@Model.Name" class="form-control" readonly />
+            </div>
+            <div class="form-group">
+                <label asp-for="@Model.Surname" class="control-label"></label>
+                <input asp-for="@Model.Surname" class="form-control" readonly />
+            </div>
+            <div class="form-group">
+                <label asp-for="@Model.Email" class="control-label"></label>
+                <input asp-for="@Model.Email" class="form-control" readonly />
+            </div>
+            <div class="form-group">
+                <label asp-for="@Model.PhoneNumber" class="control-label"></label>
+                <input asp-for="@Model.PhoneNumber" class="form-control" readonly />
+            </div>
+        </div>
+
+        <div class="col-md-5 bg-light p-4 rounded">
+            <h3 class="mb-4">Ödeme Bilgileri</h3>
+            <div class="form-group">
+                <label class="control-label" for="cname">Kartın Üstündeki İsim</label>
+                <input class="form-control" type="text" id="cname" name="cardname">
+            </div>
+            <div class="form-group">
+                <label class="control-label" for="ccnum">Kredi Kartı Numarası</label>
+                <input class="form-control" type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+            </div>
+            <div class="form-group">
+                <label for="card-expiry-month">Son Kullanma Tarihi (Ay/Yıl)</label>
+                <div class="form-row">
+                    <div class="col-6">
+                        <select class="form-control" id="card-expiry-month" name="card-expiry-month">
+                            <option value="01">Ocak</option>
+                            <option value="02">Şubat</option>
+                            <option value="03">Mart</option>
+                            <option value="04">Nisan</option>
+                            <option value="05">Mayıs</option>
+                            <option value="06">Haziran</option>
+                            <option value="07">Temmuz</option>
+                            <option value="08">Ağustos</option>
+                            <option value="09">Eylül</option>
+                            <option value="10">Ekim</option>
+                            <option value="11">Kasım</option>
+                            <option value="12">Aralık</option>
+                        </select>
+                    </div>
+                    <div class="col-6">
+                        <select class="form-control" id="card-expiry-year" name="card-expiry-year">
+                            <option value="2023">2023</option>
+                            <option value="2024">2024</option>
+                            <option value="2025">2025</option>
+                            <option value="2026">2026</option>
+                            <option value="2027">2027</option>
+                            <option value="2028">2028</option>
+                            <option value="2029">2029</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label" for="cvv">CVV</label>
+                <input class="form-control" type="text" id="cvv" name="cvv" placeholder="352">
+            </div>
+        </div>
+        <div class="col-md-2">
+            <div class="row mt-4">
+                <div class="col-md-12">
+                    <div class="card">
+                        <div class="card-header bg-primary text-white">
+                            <h3>Fatura</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="form-group">
+                                <label for="totalAmount">Toplam Tutar</label>
+                                <input class="form-control font-weight-bold" type="text" id="totalAmount" name="totalAmount" value="@ViewBag.ToplamTutar" readonly>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mt-2 text-center">
+            <a class="btn btn-primary" asp-action="OdemeOnay" asp-controller="Kiralama">Ödeme Yap</a>
+        </div>
+    </div>
+</div>
+<br />
+<br />
+<br />

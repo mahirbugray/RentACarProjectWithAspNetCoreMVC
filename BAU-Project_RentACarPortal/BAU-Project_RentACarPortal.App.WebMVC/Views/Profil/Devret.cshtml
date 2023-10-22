@@ -1,0 +1,39 @@
+﻿@model DevirViewModel
+@{
+    ViewData["Title"] = "Devret";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<section class="hero-wrap hero-wrap-2 js-fullheight" style="background-image: url('/carbook-master/images/bg_3.jpg');" data-stellar-background-ratio="0.5">
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="row no-gutters slider-text js-fullheight align-items-end justify-content-start">
+            <div class="col-md-9 ftco-animate pb-5">
+                <p class="breadcrumbs"><span class="mr-2"><a asp-action="Index" asp-controller="Anasayfa">Anasayfa <i class="ion-ios-arrow-forward"></i></a></span> <span>Devir İşlemi <i class="ion-ios-arrow-forward"></i></span></p>
+                <h1 class="mb-3 bread">Araba Devretme</h1>
+            </div>
+        </div>
+    </div>
+</section>
+
+<h1>Devir Bilgileri</h1>
+
+<div class="col-md-12 mx-auto">
+    <h4 class="tittle text-center">Devir İşlemleri</h4>
+    <div class="login p-5 bg-light mx-auto mw-100">
+        <form asp-action="Devret" asp-controller="Profil" method="post" enctype="multipart/form-data">
+            <input asp-for="FaturaNo" type="hidden" class="form-control" />
+            <input asp-for="ArabaId" type="hidden" class="form-control" />
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Km" class="control-label">Araba Kilometre</label>
+                <input asp-for="Km" type="text" class="form-control" />
+                <span asp-validation-for="Km" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Kaydet" class="btn btn-primary" />
+            </div>
+        </form>
+
+    </div>
+</div>

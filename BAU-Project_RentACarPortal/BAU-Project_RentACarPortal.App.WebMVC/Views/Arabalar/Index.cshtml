@@ -1,0 +1,110 @@
+﻿@model ArabaIndexViewModel
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<style>
+    .aktif-kategori {
+        background-color: blue; /* Seçilen kategori arkaplan rengi */
+        color: white; /* Opsiyonel: Yazı rengini beyaz yapabilirsin */
+    }
+</style>
+
+<section class="hero-wrap hero-wrap-2 js-fullheight" style="background-image: url('/carbook-master/images/bg_3.jpg');" data-stellar-background-ratio="0.5">
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="row no-gutters slider-text js-fullheight align-items-end justify-content-start">
+            <div class="col-md-9 ftco-animate pb-5">
+                <p class="breadcrumbs"><span class="mr-2"><a asp-action="Index" asp-controller="Anasayfa" >Anasayfa <i class="ion-ios-arrow-forward"></i></a></span> <span>Arabalar <i class="ion-ios-arrow-forward"></i></span></p>
+                <h1 class="mb-3 bread">Kiralamak istediğiniz aracı seçiniz</h1>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="ftco-section bg-light">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-3 list-group">
+                <table class="table table-bordered text-center">
+                    <thead>
+                        <tr>
+                            <th>
+                                <b><em>Segmentler</em></b>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in ViewBag.Kategoriler)
+                        {
+                            <a asp-action="Index" asp-controller="Arabalar" asp-route-id="@item.Id" class="list-group-item text-dark text-center">@item.KategoriAdi</a>
+                        }
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-md-9">
+                <div class="row">
+                    @if (Model.ArabaIndex.Any(a => a.IsAvailable))
+                    {
+                        @foreach (var item in Model.ArabaIndex.Where(a => a.IsAvailable))
+                        {
+                            <div class="col-md-4">
+                                <a asp-action="Details" asp-controller="Arabalar" asp-route-id="" class="car-link">
+                                    <div class="car-wrap rounded ftco-animate" style="height:350px;">
+                                        <div class="product-image">
+                                            <img src="@item.Resim" alt="" style="width: 100%; height: auto;">
+                                        </div>
+                                        <div class="text">
+                                            <h2 class="mb-0"><a href="Arabalar/Details/@item.Id">@item.Marka</a></h2>
+                                            <div class="d-flex mb-3">
+                                                <span class="cat">@item.Marka</span>
+                                                <p class="price ml-auto">@item.SaatlikUcret <span>/day</span></p>
+                                            </div>
+                                            <div class="text-center">
+                                               @*  <a asp-action="Ekle" asp-controller="Kiralama" asp-route-Id="@item.Id" class="btn btn-primary py-2 mr-1">Kirala</a> *@
+                                                <a asp-action="Details" asp-controller="Arabalar" asp-route-id="@item.Id" class="btn btn-secondary py-2 ml-1">Detaylar</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        }
+                    }
+                    else
+                    {
+                        <div class="alert alert-danger" role="alert" style="width:100%;">
+                            <strong>Araba yok! </strong> İstenilen segmentte araba bulunmamaktadır.
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+@section Scripts {
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var kategoriButonlari = document.querySelectorAll('.list-group-item');
+
+            kategoriButonlari.forEach(function (buton) {
+                buton.addEventListener("click", function () {
+                    // Tüm kategorilerden arkaplan rengini kaldır
+                    kategoriButonlari.forEach(function (digerkategoriButon) {
+                        digerkategoriButon.style.backgroundColor = '';
+                        digerkategoriButon.style.color = ''; // Opsiyonel: Yazı rengini sıfırla
+                    });
+
+                    // Seçilen kategoriye arkaplan rengini ekle
+                    buton.style.backgroundColor = 'blue';
+                    buton.style.color = 'white'; // Opsiyonel: Yazı rengini beyaz yapabilirsin
+                });
+            });
+        });
+    </script>
+}

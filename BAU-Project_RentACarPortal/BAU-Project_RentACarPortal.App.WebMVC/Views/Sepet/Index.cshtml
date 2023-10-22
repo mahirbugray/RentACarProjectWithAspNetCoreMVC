@@ -1,0 +1,83 @@
+﻿@using BAU_Project_RentACarPortal.App.Entity.Entities;
+@model List<SepetDetayViewModel>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<section class="hero-wrap hero-wrap-2 js-fullheight" style="background-image: url('/carbook-master/images/bg_3.jpg');" data-stellar-background-ratio="0.5">
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="row no-gutters slider-text js-fullheight align-items-end justify-content-start">
+            <div class="col-md-9 ftco-animate pb-5">
+                <p class="breadcrumbs"><span class="mr-2"><a asp-action="Index" asp-controller="Arabalar">Arabalar <i class="ion-ios-arrow-forward"></i></a></span> <span>Sepet <i class="ion-ios-arrow-forward"></i></span></p>
+                <h1 class="mb-3 bread">Sepet</h1>
+            </div>
+        </div>
+    </div>
+</section>
+
+<h2 class="text-center">Sepet Bilgileri</h2>
+@if (Model.Count > 0)
+{
+    <table class="table table-striped table-">
+        <thead class="thead-dark">
+            <tr>
+                <th>Film Adı</th>
+                <th>Birim Fiyat</th>
+                <th>Adet</th>
+                <th>Tutar</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var siparis in Model)
+            {
+                <tr>
+                    <td>@siparis.ArabaMarka</td>
+                    <td>@siparis.ArabaUcret</td>
+                    <td>@siparis.ArabaAdet</td>
+                    <td>@(siparis.ArabaUcret * siparis.ArabaAdet)</td>
+                    <td>
+                        <a class="btn btn-primary ms-4" asp-controller="Sepet" asp-action="Sil" asp-route-id="@siparis.ArabaId">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash3-fill" viewBox="0 0 16 16">
+                                <path d="M11 1.5v1h3.5a.5.5 0 0 1 0 1h-.538l-.853 10.66A2 2 0 0 1 11.115 16h-6.23a2 2 0 0 1-1.994-1.84L2.038 3.5H1.5a.5.5 0 0 1 0-1H5v-1A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5Zm-5 0v1h4v-1a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5ZM4.5 5.029l.5 8.5a.5.5 0 1 0 .998-.06l-.5-8.5a.5.5 0 1 0-.998.06Zm6.53-.528a.5.5 0 0 0-.528.47l-.5 8.5a.5.5 0 0 0 .998.058l.5-8.5a.5.5 0 0 0-.47-.528ZM8 4.5a.5.5 0 0 0-.5.5v8.5a.5.5 0 0 0 1 0V5a.5.5 0 0 0-.5-.5Z" />
+                            </svg>
+                        </a>
+                    </td>
+                </tr>
+            }
+            <tr class="fw-bold">
+                <td>Toplam</td>
+                <td></td>
+                <td>
+                    @if (TempData["ToplamAdet"] != null)
+                    {
+                        @TempData["ToplamAdet"]
+                    }
+                </td>
+                <td>
+                    @if (TempData["ToplamTutar"] != null)
+                    {
+                        @TempData["ToplamTutar"]
+                    }
+                </td>
+                <td><a class="btn btn-primary me-2" asp-controller="Sepet" asp-action="SepetSil">Tümünü Sil</a></td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="text-center">
+        <a class="btn btn-primary me-2" asp-controller="Arabalar" asp-action="Index">Alışverişe Devam</a>
+        <a class="btn btn-primary" asp-controller="Kiralama" asp-action="Index">Sepeti Onayla</a>
+    </div>
+}
+else
+{
+    <div class="alert alert-primary" role="alert">
+        Sepetiniz boş!
+    </div>
+    <div class="text-center mt-5">
+        <a class="btn btn-primary me-2" asp-controller="Arabalar" asp-action="Index">Alışverişe Devam</a>
+    </div>
+}
+
+

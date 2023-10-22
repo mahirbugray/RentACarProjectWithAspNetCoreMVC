@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "BAU-Project_RentACarPortal.App.Entity/1.0.0": {
+        "runtime": {
+          "BAU-Project_RentACarPortal.App.Entity.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "BAU-Project_RentACarPortal.App.Entity/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

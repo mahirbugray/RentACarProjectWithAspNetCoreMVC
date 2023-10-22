@@ -1,0 +1,108 @@
+﻿@model RegisterViewModel
+
+@{
+    ViewData["Title"] = "Register";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<section class="hero-wrap hero-wrap-2 js-fullheight" style="background-image: url('/carbook-master/images/bg_3.jpg');" data-stellar-background-ratio="0.5"> 
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="row no-gutters slider-text js-fullheight align-items-end justify-content-start">
+            <div class="col-md-9 ftco-animate pb-5">
+                <p class="breadcrumbs"><span class="mr-2"><a asp-action="Index" asp-controller="Anasayfa">Anasayfa <i class="ion-ios-arrow-forward"></i></a></span> <span>Kayıt Ol <i class="ion-ios-arrow-forward"></i></span></p>
+                <h1 class="mb-3 bread">Yeni Kayıt</h1>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <br />
+    <br />
+    <br />
+    <div class="container">
+        <div class="col-md-6 mx-auto">  
+            <div class="login p-5 bg-light mx-auto mw-100" style="border-radius:20px; border: 1px solid #ccc;">
+                <h4 class="tittle text-center">Kullanıcı Kayıt</h4>
+                <form asp-action="Register" asp-controller="Account" method="post">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <div class="form-group">
+                        <label asp-for="FirstName" class="control-label">İsim</label>
+                        <input asp-for="FirstName" class="form-control" />
+                        <span asp-validation-for="FirstName" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="LastName" class="control-label">Soyisim</label>
+                        <input asp-for="LastName" class="form-control" />
+                        <span asp-validation-for="LastName" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Username" class="control-label">Kullanıcı Adı</label>
+                        <input asp-for="Username" class="form-control" />
+                        <span asp-validation-for="Username" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="DogumYili" class="control-label">Doğum Tarihi</label>
+                        <input asp-for="DogumYili" type="date" class="form-control" />
+                        <span asp-validation-for="DogumYili" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="TcNo" class="control-label">TC Kimlik Numarası</label>
+                        <input asp-for="TcNo" type="text" class="form-control" pattern="\d{11}" maxlength="11" required />
+                        <span asp-validation-for="TcNo" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="PhoneNumber" class="control-label">Telefon Numarası</label>
+                        <input asp-for="PhoneNumber" type="tel" class="form-control" maxlength="11" required />
+                        <span asp-validation-for="PhoneNumber" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Adres" class="control-label">Adres</label>
+                        <input asp-for="Adres" class="form-control" />
+                        <span asp-validation-for="Adres" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label">Cinsiyet</label>
+                        <div>
+                            <label class="radio-inline">
+                                <input type="radio" asp-for="Cinsiyet" value="Erkek" /> Erkek
+                            </label>
+                            <label class="radio-inline">
+                                <input type="radio" asp-for="Cinsiyet" value="Kadın" /> Kadın
+                            </label>
+                            <span asp-validation-for="Cinsiyet" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Email" class="control-label">E Mail</label>
+                        <input asp-for="Email" type="email" class="form-control" />
+                        <span asp-validation-for="Email" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Password" class="control-label">Şifre</label>
+                        <input asp-for="Password" class="form-control" />
+                        <span asp-validation-for="Password" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="ConfirmPassword" class="control-label">Şifre Tekrar</label>
+                        <input asp-for="ConfirmPassword" class="form-control" />
+                        <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+                    </div>
+                    <div class="form-group text-center">
+                        <input type="submit" value="Kayıt Ol" class="btn btn-primary" />
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+    </br>
+    </br>
+    </br>
+</section>
+@*@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}*@

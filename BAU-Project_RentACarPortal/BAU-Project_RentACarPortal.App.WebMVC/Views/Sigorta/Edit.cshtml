@@ -1,0 +1,39 @@
+﻿@model SigortaViewModel
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<div class="container">
+    <div class="col-md-6 mx-auto">
+        <div class="login p-5 bg-light mx-auto mw-100" style="border-radius:20px; border: 1px solid #ccc;">
+            <h4 class="tittle text-center">Sigorta Bilgi Güncelleme</h4>
+            <form asp-action="Edit" asp-controller="Sigorta" method="post">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-group">
+                    <label asp-for="SigortaAdi" class="control-label">Sigorta Adı</label>
+                    <input asp-for="SigortaAdi" class="form-control" />
+                    <span asp-validation-for="SigortaAdi" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="SigortaBaslangic" class="control-label">Sigorta Başlangıç Tarihi</label>
+                    <input asp-for="SigortaBaslangic" type="date" class="form-control" />
+                    <span asp-validation-for="SigortaBaslangic" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="SigortaBitis" class="control-label">Sigorta Bitiş Tarihi</label>
+                    <input asp-for="SigortaBitis" type="date" class="form-control" />
+                    <span asp-validation-for="SigortaBitis" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="SigortaUcret" class="control-label">Sigorta Ücreti</label>
+                    <input asp-for="SigortaUcret" type="" class="form-control" />
+                    <span asp-validation-for="SigortaUcret" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Güncelle" class="btn btn-primary" />
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

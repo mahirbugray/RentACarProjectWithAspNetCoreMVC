@@ -1,0 +1,273 @@
+﻿@model ArabaDetailsViewModel
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<style>
+    .review-container {
+        border: 1px solid #ddd; /* Kutu kenarlık rengi */
+        padding: 15px; /* Kutu içi boşluk */
+        margin-bottom: 20px; /* Kutular arası boşluk */
+        border-radius: 8px; /* Kutu köşeleri yuvarlatma */
+    }
+
+    .customer-name {
+        font-size: 18px; /* Müşteri adı font büyüklüğü */
+        font-weight: bold; /* Müşteri adı kalınlığı */
+        color: #333; /* Müşteri adı rengi */
+    }
+
+    .customer-review-box {
+        margin-top: 10px; /* Yorum ile müşteri adı arası boşluk */
+        font-size: 14px; /* Yorum font büyüklüğü */
+        color: #666; /* Yorum rengi */
+    }
+
+    .media-body p {
+        color: #777;
+        font-size: 0.875em;
+        line-height: 1.9em;
+        margin-bottom: 3em;
+    }
+
+    .comment h3, .comment-top h4 {
+        font-size: 1.2em;
+    }
+</style>
+
+
+<section class="hero-wrap hero-wrap-2 js-fullheight" style="background-image: url('/carbook-master/images/bg_3.jpg');" data-stellar-background-ratio="0.5">
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="row no-gutters slider-text js-fullheight align-items-end justify-content-start">
+            <div class="col-md-9 ftco-animate pb-5">
+                <p class="breadcrumbs"><span class="mr-2"><a asp-action="Index" asp-controller="Anasayfa">Anasayfa <i class="ion-ios-arrow-forward"></i></a></span> <span><a asp-action="Index" asp-controller="Arabalar">Arabalar</a> <i class="ion-ios-arrow-forward"></i></span> Detaylar</p>
+                <h1 class="mb-3 bread">Araba Detayları</h1>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="ftco-section ftco-car-details">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-12">
+                <div class="car-details">
+                    <div class="product-image">
+                        <img src="@Model.Araba.Resim" alt="@Model.Araba.Marka" style="width: 100%; height: auto;">
+                    </div>
+                    <div class="text text-center">
+                        <span class="subheading">@Model.Araba.Marka</span>
+                        <h2>@Model.Araba.Model</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md d-flex align-self-stretch ftco-animate">
+                <div class="media block-6 services">
+                    <div class="media-body py-md-4">
+                        <div class="d-flex mb-3 align-items-center">
+                            <div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-dashboard"></span></div>
+                            <div class="text">
+                                <h3 class="heading mb-0 pl-3">
+                                    Kilometre
+                                    <span>@Model.ArabaDetay.Km</span>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md d-flex align-self-stretch ftco-animate">
+                <div class="media block-6 services">
+                    <div class="media-body py-md-4">
+                        <div class="d-flex mb-3 align-items-center">
+                            <div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-pistons"></span></div>
+                            <div class="text">
+                                <h3 class="heading mb-0 pl-3">
+                                    Vites kutusu
+                                    <span>@Model.ArabaDetay.Vites</span>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md d-flex align-self-stretch ftco-animate">
+                <div class="media block-6 services">
+                    <div class="media-body py-md-4">
+                        <div class="d-flex mb-3 align-items-center">
+                            <div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-car-seat"></span></div>
+                            <div class="text">
+                                <h3 class="heading mb-0 pl-3">
+                                    Yolcu Sayısı
+                                    <span>4 Kişi</span>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md d-flex align-self-stretch ftco-animate">
+                <div class="media block-6 services">
+                    <div class="media-body py-md-4">
+                        <div class="d-flex mb-3 align-items-center">
+                            <div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-backpack"></span></div>
+                            <div class="text">
+                                <h3 class="heading mb-0 pl-3">
+                                    Bagaj kapasitesi
+                                    <span>2 Büyük Boy Valiz</span>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md d-flex align-self-stretch ftco-animate">
+                <div class="media block-6 services">
+                    <div class="media-body py-md-4">
+                        <div class="d-flex mb-3 align-items-center">
+                            <div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-diesel"></span></div>
+                            <div class="text">
+                                <h3 class="heading mb-0 pl-3">
+                                    Yakıt Türü
+                                    <span>@Model.ArabaDetay.Yakıt</span>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <form asp-action="Ekle" asp-controller="Kiralama">
+            <input asp-for="Araba.Id" type="hidden"/>
+            <div class="text-center mt-3">
+                <label>Kiralanacak Gün Sayısı</label> <br />
+                <input name="Gun"/>
+            </div>
+            <div class="text-center mt-3">
+                <button class="btn btn-info btn-lg font-weight-bold" style="width: 200px; color:black;" type="submit" >Kirala</button>
+            </div>
+        </form>
+        <div class="row">
+            <div class="col-md-12 pills">
+                <div class="bd-example bd-example-tabs">
+                    <div class="d-flex justify-content-center">
+                        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+
+                            <li class="nav-item">
+                                <a class="nav-link active" id="pills-description-tab" data-toggle="pill" href="#pills-description" role="tab" aria-controls="pills-description" aria-expanded="true">Özellikler</a>
+                            </li>
+                            @*							<li class="nav-item">
+                            <a class="nav-link" id="pills-manufacturer-tab" data-toggle="pill" href="#pills-manufacturer" role="tab" aria-controls="pills-manufacturer" aria-expanded="true">Description</a>
+                            </li>*@
+                            <li class="nav-item">
+                                <a class="nav-link" id="pills-review-tab" data-toggle="pill" href="#pills-review" role="tab" aria-controls="pills-review" aria-expanded="true">Yorumlar</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="pills-aciklama-tab" data-toggle="pill" href="#pills-aciklama" role="tab" aria-controls="pills-aciklama" aria-expanded="true">Araç Açıklama</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="pills-description" role="tabpanel" aria-labelledby="pills-description-tab">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <ul class="features">
+                                        <li class="check"><span class="ion-ios-checkmark"></span>Klima</li>
+                                        <li class="check"><span class="ion-ios-checkmark"></span>Çocuk Koltuğu</li>
+                                        <li class="check"><span class="ion-ios-checkmark"></span>GPS</li>
+                                        <li class="check"><span class="ion-ios-checkmark"></span>Bagaj</li>
+                                        <li class="check"><span class="ion-ios-checkmark"></span>Müzik</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-4">
+                                    <ul class="features">
+                                        <li class="check"><span class="ion-ios-checkmark"></span>Emniyet Kemeri</li>
+                                        <li class="remove"><span class="ion-ios-close"></span>Yatak</li>
+                                        <li class="check"><span class="ion-ios-checkmark"></span>Su</li>
+                                        <li class="check"><span class="ion-ios-checkmark"></span>Bluetooth</li>
+                                        <li class="remove"><span class="ion-ios-close"></span>Araç Bilgsayarı</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-4">
+                                    <ul class="features">
+                                        <li class="check"><span class="ion-ios-checkmark"></span>Ses Girişi</li>
+                                        <li class="check"><span class="ion-ios-checkmark"></span>Uzun Süreli Kiralama</li>
+                                        <li class="check"><span class="ion-ios-checkmark"></span>Araç Kiti</li>
+                                        <li class="check"><span class="ion-ios-checkmark"></span>Uzaktan Kilitleme</li>
+                                        <li class="check"><span class="ion-ios-checkmark"></span>Uzaktan Klima Kontrol</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="pills-review" role="tabpanel" aria-labelledby="pills-review-tab">
+                            <div class="row">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="review d-flex">
+                                            <div class="desc ">
+                                                @foreach (var item in ViewBag.Degerlendirmeler)
+                                                {
+                                                    <li style="margin-bottom: 20px; display: flex; align-items: center; background-color:lightgrey; border-radius:10px;">
+                                                        <div class="user-img" style="background-image: url(/carbook-master/images/person_1.jpg); width: 50px; height: 50px; border-radius: 50%; margin-right: 10px;"></div>
+                                                        <div>
+                                                            <h4 style=" display: flex; align-items: center;">
+                                                                @item.MusteriAdi
+                                                            </h4>
+                                                            <p class="star" style="margin: 0;">
+                                                                <span>
+                                                                    <i class="ion-ios-star"></i>
+                                                                    <i class="ion-ios-star"></i>
+                                                                    <i class="ion-ios-star"></i>
+                                                                    <i class="ion-ios-star"></i>
+                                                                    <i class="ion-ios-star"></i>
+                                                                </span>
+                                                            </p>
+                                                        </div>
+                                                   
+                                                    <p class="text-dark font-bold font-italic">@item.Yorum</p>
+                                                        <span style="margin-left: 650px;" class="text-dark">@item.YorumTarihi.ToShortDateString()</span>
+                                                    </li>
+                                                }
+                                            </div>
+
+                                        </div>
+                                        <div class="comment-top">
+                                            @if (User.Identity.IsAuthenticated)
+                                            {
+                                                <h4>Yorumlarınızı Bekliyoruz...</h4>
+                                                <div class="comment-bottom">
+                                                    <form asp-action="CreateDegerlendirme" asp-controller="Arabalar" asp-route-Id="@Model.Araba.Id" method="post">
+                                                        @*<input class="form-control" type="text" name="Name" placeholder="Name" required="">
+                                                    <input class="form-control" type="email" name="Email" placeholder="Email" required="">*@
+
+                                                        <input class="form-control" type="text" name="Subject" placeholder="Subject" required="">
+
+                                                        <textarea class="form-control" name="Message" placeholder="Message..." required=""></textarea>
+                                                        <button type="submit" class="btn btn-primary submit">Gönder</button>
+                                                    </form>
+                                                </div>
+                                            }
+                                            else
+                                            {
+                                                <a asp-controller="Account" asp-action="Login">Yorum eklemek için üye girişi yapınız.</a>
+                                            }
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="pills-aciklama" role="tabpanel" aria-labelledby="pills-aciklama-tab">
+                                        <div class="row">
+                                            <div class="col-md-12" style="background-color: #f2f2f2; padding: 10px; border-radius: 5px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
+                                                @Model.ArabaDetay.Aciklama
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+</section>
+

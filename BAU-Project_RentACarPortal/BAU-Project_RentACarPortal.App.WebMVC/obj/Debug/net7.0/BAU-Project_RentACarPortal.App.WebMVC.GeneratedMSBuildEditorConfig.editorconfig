@@ -1,0 +1,217 @@
+is_global = true
+build_property.TargetFramework = net7.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = BAU_Project_RentACarPortal.App.WebMVC
+build_property.RootNamespace = BAU_Project_RentACarPortal.App.WebMVC
+build_property.ProjectDir = C:\Users\ROG\Desktop\BahcesehirEgitim\BAU-Proje\BAU-Project_RentACarPortal\BAU-Project_RentACarPortal.App.WebMVC\
+build_property.RazorLangVersion = 7.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\ROG\Desktop\BahcesehirEgitim\BAU-Proje\BAU-Project_RentACarPortal\BAU-Project_RentACarPortal.App.WebMVC
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/ROG/Desktop/BahcesehirEgitim/BAU-Proje/BAU-Project_RentACarPortal/BAU-Project_RentACarPortal.App.WebMVC/Views/Account/AccessDenied.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxBY2Nlc3NEZW5pZWQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ROG/Desktop/BahcesehirEgitim/BAU-Proje/BAU-Project_RentACarPortal/BAU-Project_RentACarPortal.App.WebMVC/Views/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ROG/Desktop/BahcesehirEgitim/BAU-Proje/BAU-Project_RentACarPortal/BAU-Project_RentACarPortal.App.WebMVC/Views/Account/PasswordReset.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxQYXNzd29yZFJlc2V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ROG/Desktop/BahcesehirEgitim/BAU-Proje/BAU-Project_RentACarPortal/BAU-Project_RentACarPortal.App.WebMVC/Views/Account/PasswordResetControl.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxQYXNzd29yZFJlc2V0Q29udHJvbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ROG/Desktop/BahcesehirEgitim/BAU-Proje/BAU-Project_RentACarPortal/BAU-Project_RentACarPortal.App.WebMVC/Views/Account/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ROG/Desktop/BahcesehirEgitim/BAU-Proje/BAU-Project_RentACarPortal/BAU-Project_RentACarPortal.App.WebMVC/Views/Admin/ArabaListele.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQXJhYmFMaXN0ZWxlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ROG/Desktop/BahcesehirEgitim/BAU-Proje/BAU-Project_RentACarPortal/BAU-Project_RentACarPortal.App.WebMVC/Views/Admin/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ROG/Desktop/BahcesehirEgitim/BAU-Proje/BAU-Project_RentACarPortal/BAU-Project_RentACarPortal.App.WebMVC/Views/Anasayfa/Hakkimizda.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW5hc2F5ZmFcSGFra2ltaXpkYS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ROG/Desktop/BahcesehirEgitim/BAU-Proje/BAU-Project_RentACarPortal/BAU-Project_RentACarPortal.App.WebMVC/Views/Anasayfa/IKPolitika.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW5hc2F5ZmFcSUtQb2xpdGlrYS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ROG/Desktop/BahcesehirEgitim/BAU-Proje/BAU-Project_RentACarPortal/BAU-Project_RentACarPortal.App.WebMVC/Views/Anasayfa/Iletisim.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW5hc2F5ZmFcSWxldGlzaW0uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ROG/Desktop/BahcesehirEgitim/BAU-Proje/BAU-Project_RentACarPortal/BAU-Project_RentACarPortal.App.WebMVC/Views/Anasayfa/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW5hc2F5ZmFcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ROG/Desktop/BahcesehirEgitim/BAU-Proje/BAU-Project_RentACarPortal/BAU-Project_RentACarPortal.App.WebMVC/Views/Anasayfa/Kurumsal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW5hc2F5ZmFcS3VydW1zYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ROG/Desktop/BahcesehirEgitim/BAU-Proje/BAU-Project_RentACarPortal/BAU-Project_RentACarPortal.App.WebMVC/Views/Anasayfa/Vizyon.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW5hc2F5ZmFcVml6eW9uLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ROG/Desktop/BahcesehirEgitim/BAU-Proje/BAU-Project_RentACarPortal/BAU-Project_RentACarPortal.App.WebMVC/Views/ArabaDetay/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXJhYmFEZXRheVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ROG/Desktop/BahcesehirEgitim/BAU-Proje/BAU-Project_RentACarPortal/BAU-Project_RentACarPortal.App.WebMVC/Views/ArabaKategori/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXJhYmFLYXRlZ29yaVxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ROG/Desktop/BahcesehirEgitim/BAU-Proje/BAU-Project_RentACarPortal/BAU-Project_RentACarPortal.App.WebMVC/Views/ArabaKategori/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXJhYmFLYXRlZ29yaVxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ROG/Desktop/BahcesehirEgitim/BAU-Proje/BAU-Project_RentACarPortal/BAU-Project_RentACarPortal.App.WebMVC/Views/ArabaKategori/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXJhYmFLYXRlZ29yaVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ROG/Desktop/BahcesehirEgitim/BAU-Proje/BAU-Project_RentACarPortal/BAU-Project_RentACarPortal.App.WebMVC/Views/Arabalar/AdminIndex.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXJhYmFsYXJcQWRtaW5JbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ROG/Desktop/BahcesehirEgitim/BAU-Proje/BAU-Project_RentACarPortal/BAU-Project_RentACarPortal.App.WebMVC/Views/Arabalar/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXJhYmFsYXJcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ROG/Desktop/BahcesehirEgitim/BAU-Proje/BAU-Project_RentACarPortal/BAU-Project_RentACarPortal.App.WebMVC/Views/Arabalar/CreateDetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXJhYmFsYXJcQ3JlYXRlRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ROG/Desktop/BahcesehirEgitim/BAU-Proje/BAU-Project_RentACarPortal/BAU-Project_RentACarPortal.App.WebMVC/Views/Arabalar/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXJhYmFsYXJcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ROG/Desktop/BahcesehirEgitim/BAU-Proje/BAU-Project_RentACarPortal/BAU-Project_RentACarPortal.App.WebMVC/Views/Arabalar/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXJhYmFsYXJcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ROG/Desktop/BahcesehirEgitim/BAU-Proje/BAU-Project_RentACarPortal/BAU-Project_RentACarPortal.App.WebMVC/Views/Arabalar/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXJhYmFsYXJcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ROG/Desktop/BahcesehirEgitim/BAU-Proje/BAU-Project_RentACarPortal/BAU-Project_RentACarPortal.App.WebMVC/Views/ErrorPage/Error1.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXJyb3JQYWdlXEVycm9yMS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ROG/Desktop/BahcesehirEgitim/BAU-Proje/BAU-Project_RentACarPortal/BAU-Project_RentACarPortal.App.WebMVC/Views/Firma/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmlybWFcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ROG/Desktop/BahcesehirEgitim/BAU-Proje/BAU-Project_RentACarPortal/BAU-Project_RentACarPortal.App.WebMVC/Views/Firma/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmlybWFcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ROG/Desktop/BahcesehirEgitim/BAU-Proje/BAU-Project_RentACarPortal/BAU-Project_RentACarPortal.App.WebMVC/Views/Firma/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmlybWFcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ROG/Desktop/BahcesehirEgitim/BAU-Proje/BAU-Project_RentACarPortal/BAU-Project_RentACarPortal.App.WebMVC/Views/KiralamaDetaylar/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2lyYWxhbWFEZXRheWxhclxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ROG/Desktop/BahcesehirEgitim/BAU-Proje/BAU-Project_RentACarPortal/BAU-Project_RentACarPortal.App.WebMVC/Views/Kiralama/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2lyYWxhbWFcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ROG/Desktop/BahcesehirEgitim/BAU-Proje/BAU-Project_RentACarPortal/BAU-Project_RentACarPortal.App.WebMVC/Views/Kiralama/Odeme.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2lyYWxhbWFcT2RlbWUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ROG/Desktop/BahcesehirEgitim/BAU-Proje/BAU-Project_RentACarPortal/BAU-Project_RentACarPortal.App.WebMVC/Views/Musteri/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTXVzdGVyaVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ROG/Desktop/BahcesehirEgitim/BAU-Proje/BAU-Project_RentACarPortal/BAU-Project_RentACarPortal.App.WebMVC/Views/Profil/Devret.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZmlsXERldnJldC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ROG/Desktop/BahcesehirEgitim/BAU-Proje/BAU-Project_RentACarPortal/BAU-Project_RentACarPortal.App.WebMVC/Views/Profil/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZmlsXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ROG/Desktop/BahcesehirEgitim/BAU-Proje/BAU-Project_RentACarPortal/BAU-Project_RentACarPortal.App.WebMVC/Views/Profil/ProfilBilgiGuncelle.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZmlsXFByb2ZpbEJpbGdpR3VuY2VsbGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ROG/Desktop/BahcesehirEgitim/BAU-Proje/BAU-Project_RentACarPortal/BAU-Project_RentACarPortal.App.WebMVC/Views/Role/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZVxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ROG/Desktop/BahcesehirEgitim/BAU-Proje/BAU-Project_RentACarPortal/BAU-Project_RentACarPortal.App.WebMVC/Views/Role/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZVxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ROG/Desktop/BahcesehirEgitim/BAU-Proje/BAU-Project_RentACarPortal/BAU-Project_RentACarPortal.App.WebMVC/Views/Role/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ROG/Desktop/BahcesehirEgitim/BAU-Proje/BAU-Project_RentACarPortal/BAU-Project_RentACarPortal.App.WebMVC/Views/Sepet/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VwZXRcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ROG/Desktop/BahcesehirEgitim/BAU-Proje/BAU-Project_RentACarPortal/BAU-Project_RentACarPortal.App.WebMVC/Views/Shared/Components/OneCikanlar/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcT25lQ2lrYW5sYXJcRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ROG/Desktop/BahcesehirEgitim/BAU-Proje/BAU-Project_RentACarPortal/BAU-Project_RentACarPortal.App.WebMVC/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ROG/Desktop/BahcesehirEgitim/BAU-Proje/BAU-Project_RentACarPortal/BAU-Project_RentACarPortal.App.WebMVC/Views/Shared/FooterPartialView.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEZvb3RlclBhcnRpYWxWaWV3LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ROG/Desktop/BahcesehirEgitim/BAU-Proje/BAU-Project_RentACarPortal/BAU-Project_RentACarPortal.App.WebMVC/Views/Shared/HeaderPartialView.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEhlYWRlclBhcnRpYWxWaWV3LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ROG/Desktop/BahcesehirEgitim/BAU-Proje/BAU-Project_RentACarPortal/BAU-Project_RentACarPortal.App.WebMVC/Views/Shared/_LayoutAdmin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRBZG1pbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ROG/Desktop/BahcesehirEgitim/BAU-Proje/BAU-Project_RentACarPortal/BAU-Project_RentACarPortal.App.WebMVC/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ROG/Desktop/BahcesehirEgitim/BAU-Proje/BAU-Project_RentACarPortal/BAU-Project_RentACarPortal.App.WebMVC/Views/Sigorta/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2lnb3J0YVxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ROG/Desktop/BahcesehirEgitim/BAU-Proje/BAU-Project_RentACarPortal/BAU-Project_RentACarPortal.App.WebMVC/Views/Sigorta/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2lnb3J0YVxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ROG/Desktop/BahcesehirEgitim/BAU-Proje/BAU-Project_RentACarPortal/BAU-Project_RentACarPortal.App.WebMVC/Views/Sigorta/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2lnb3J0YVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ROG/Desktop/BahcesehirEgitim/BAU-Proje/BAU-Project_RentACarPortal/BAU-Project_RentACarPortal.App.WebMVC/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ROG/Desktop/BahcesehirEgitim/BAU-Proje/BAU-Project_RentACarPortal/BAU-Project_RentACarPortal.App.WebMVC/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ROG/Desktop/BahcesehirEgitim/BAU-Proje/BAU-Project_RentACarPortal/BAU-Project_RentACarPortal.App.WebMVC/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-3kvhloc7wd

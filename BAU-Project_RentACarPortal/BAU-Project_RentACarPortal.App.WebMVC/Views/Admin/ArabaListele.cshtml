@@ -1,0 +1,62 @@
+﻿@model List<ArabaViewModel>
+@{
+    ViewData["Title"] = "ArabaListele";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<div class="ibox-content">
+    <div class="row wrapper border-bottom white-bg page-heading">
+        <div class="col-lg-9">
+            <h2>Admin</h2>
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                    <a href="/admin/index">Admin</a>
+                </li>
+                <li class="breadcrumb-item active">
+                    <strong>Bekleyen İşlemler</strong>
+                </li>
+            </ol>
+
+        </div>
+    </div>
+    <table class="footable table table-stripped toggle-arrow-tiny">
+        <thead>
+            <tr>
+
+                <th data-toggle="true">Araba Marka</th>
+                <th data-toggle="true">Araba Model</th>
+                <th data-toggle="true">Araba Plaka</th>
+                <th data-toggle="true">Araba Saatlik Ücret</th>
+                <th data-toggle="true">Araba Kirada Mı</th>
+                <th data-toggle="true">Araba Resim</th>
+                <th data-toggle="true">Araba Hasar Durumu</th>
+                <th data-toggle="true"><a>Araba Detay</a></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.Marka</td>
+                    <td>@item.Model</td>
+                    <td>@item.Plaka</td>
+                    <td>@item.SaatlikUcret</td>
+                    <td>@item.IsAvailable</td>
+                    <td>
+                        <div style="width: 100px; height: 100px; border: 1px solid #ccc; overflow: hidden;">
+                            <img src="@item.Resim" alt="Resim" style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                    </td>
+                    <form asp-action="Edit" asp-controller="Admin" method="post">
+                    <input type="hidden" name="Id" value="@item.Id">
+                    <td><input type="number" name="HasarDurumu" value="@item.HasarDurumu"/></td>
+                    <td>
+                        <button class="btn btn-info" type="submit" value="Değişiklikleri Uygula"/>
+                    </td>
+                    </form>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+</div>

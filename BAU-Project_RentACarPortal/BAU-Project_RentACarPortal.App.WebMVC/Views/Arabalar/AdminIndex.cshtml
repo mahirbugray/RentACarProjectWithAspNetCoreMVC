@@ -1,0 +1,67 @@
+﻿@model List<ArabaViewModel>
+@{
+    ViewData["Title"] = "AdminIndex";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<div class="ibox-content">
+    <div class="row wrapper border-bottom white-bg page-heading">
+        <div class="col-lg-9">
+            <h2>Admin</h2>
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                    <a href="/admin/index">Admin</a>
+                </li>
+                <li class="breadcrumb-item active">
+                    <strong>Arabalar</strong>
+                </li>
+            </ol>
+
+        </div>
+    </div>
+    <table class="footable table table-stripped toggle-arrow-tiny">
+        <a type="button" class="btn btn-info float-right mr-5" asp-action="Create" asp-controller="Arabalar">Yeni Araba Ekle</a>
+        <thead>
+            <tr>
+
+                <th data-toggle="true">Araba Marka</th>
+                <th data-toggle="true">Araba Model</th>
+                <th data-toggle="true">Araba Plaka</th>
+                <th data-toggle="true">Araba Saatlik Ücret</th>
+                <th data-toggle="true">Araba Kirada Mı</th>
+                <th data-toggle="true">Araba Resim</th>
+                <th data-toggle="true">Firma</th>
+                <th data-toggle="true"><a>Araba Detay</a></th>
+                <th>İşlemler</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.Marka</td>
+                    <td>@item.Model</td>
+                    <td>@item.Plaka</td>
+                    <td>@item.SaatlikUcret</td>
+                    <td>@item.IsAvailable</td>
+                    <td>
+                        <div style="width: 100px; height: 100px; border: 1px solid #ccc; overflow: hidden;">
+                            <img src="@item.Resim" alt="Resim" style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                    </td>
+                    <td>@item.Firma.FirmaAdi</td>
+
+                    <td><a asp-action="Index" asp-controller="ArabaDetay" asp-route-id="@item.Id" class="btn btn-success">Araba Detay Görüntüle</a></td> 
+                    <td>
+                        <a type="button" class="btn btn-danger" asp-action="Delete" asp-controller="Arabalar" asp-route-id="@item.Id" onclick="return confirm('Silmek İstiyor musunuz')">Sil</a>&nbsp; <a type="button" class="btn btn-warning" asp-action="Edit" asp-controller="Arabalar" asp-route-id="@item.Id">Güncelle</a>
+                    </td>
+                    @* <td>20%</td>
+                <td>Jul 14, 2013</td>
+                <td><a href="#"><i class="fa fa-check text-navy"></i></a></td>*@
+                </tr>
+            }
+        </tbody>
+    </table>
+
+</div>
+

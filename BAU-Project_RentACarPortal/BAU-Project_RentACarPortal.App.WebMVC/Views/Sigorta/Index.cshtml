@@ -1,0 +1,54 @@
+﻿@model List<SigortaViewModel>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<div class="ibox-content">
+    <div class="row wrapper border-bottom white-bg page-heading">
+        <div class="col-lg-9">
+            <h2>Admin</h2>
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                    <a href="/admin/index">Admin</a>
+                </li>
+                <li class="breadcrumb-item active">
+                    <strong>Sigorta</strong>
+                </li>
+            </ol>
+
+        </div>
+    </div>
+    <table class="footable table table-stripped toggle-arrow-tiny">
+        <a type="button" class="btn btn-info float-right mr-5" asp-action="Create" asp-controller="Sigorta">Yeni Sigorta Ekle</a>
+        <thead>
+            <tr>
+
+                <th data-toggle="true">Sigorta Adı</th>
+                <th>Sigorta Başlangıç Tarihi</th>
+                <th>Sigorta Bitiş Tarihi</th>
+                <th data-hide="all">Sigorta Ücreti</th>
+                <th>İşlemler</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.SigortaAdi</td>
+                    <td>@item.SigortaBaslangic</td>
+                    <td>@item.SigortaBitis</td>
+                    <td>@item.SigortaUcret TL</td>
+                    <td>
+                        <a type="button" class="btn btn-danger" asp-action="Delete" asp-controller="Sigorta" asp-route-id="@item.Id" onclick="return confirm('Silmek İstiyor musunuz')">Sil</a>&nbsp; <a type="button" class="btn btn-warning" asp-action="Edit" asp-controller="Sigorta" asp-route-id="@item.Id">Güncelle</a>
+                    </td>
+                    @* <td>20%</td>
+                <td>Jul 14, 2013</td>
+                <td><a href="#"><i class="fa fa-check text-navy"></i></a></td>*@
+                </tr>
+            }
+        </tbody>
+    </table>
+
+</div>
+

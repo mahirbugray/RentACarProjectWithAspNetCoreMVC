@@ -1,0 +1,94 @@
+﻿@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+<div class="ibox-content">
+    <div class="row wrapper border-bottom white-bg page-heading">
+        <div class="col-lg-9">
+            <h2>Admin</h2>
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                    <a href="/admin/index">Admin</a>
+                </li>
+            </ol>
+
+        </div>
+    </div>
+    <div class="wrapper wrapper-content animated fadeInRight">
+        <div class="row">
+            <div class="col-3">
+                <div class="widget style1 blue-bg">
+                    <div class="row">
+                        <div class="col-4 text-center">
+                            <i class="fa fa-trophy fa-5x"></i>
+                        </div>
+                        <div class="col-8 text-right">
+                            <span> Toplam Kazanç </span>
+                            <h2 class="font-bold">@ViewBag.ToplamHasılat.ToString("C")</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="widget style1 navy-bg">
+                    <div class="row">
+                        <div class="col-4">
+                            <i class="fa fa-home fa-5x"></i>
+                        </div>
+                        <div class="col-8 text-right">
+                            <span> Firmalarımız </span>
+                            <h2 class="font-bold">@ViewBag.Firmalar</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="widget style1 lazur-bg">
+                    <div class="row">
+                        <div class="col-4">
+                            <i class="fa fa-address-book fa-5x"></i>
+                        </div>
+                        <div class="col-8 text-right">
+                            <span> Müşterilerimiz </span>
+                            <h2 class="font-bold">@ViewBag.Musteriler</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="widget style1 yellow-bg">
+                    <div class="row">
+                        <div class="col-4">
+                            <i class="fa fa-car fa-5x"></i>
+                        </div>
+                        <div class="col-8 text-right">
+                            <span> Arabalarımız </span>
+                            <h2 class="font-bold">@ViewBag.arabalar</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-8" style="margin:auto; text-align:center;">
+            <div class="widget style1 navy-bg">
+                <div class="row">
+                    <div class="col-4">
+                        <i class="fa fa-paper-plane fa-5x"></i>
+                    </div>
+                    <div class="col-8 text-right">
+                        @if (ViewBag.Guncellenecekler != 0)
+                        {
+                            <a class="btn btn-info" asp-action="ArabaListele" asp-controller="Admin">Arabaları Gör</a>
+                            <span> Bekleyen İşlemler </span>
+                            <h2 class="font-bold">@ViewBag.Guncellenecekler</h2>
+                        }
+                        else
+                        {
+                            <span> Bekleyen İşlem Yok </span>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
