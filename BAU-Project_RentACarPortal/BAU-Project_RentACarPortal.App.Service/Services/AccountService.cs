@@ -251,5 +251,11 @@ namespace BAU_Project_RentACarPortal.App.Service.Services
             }
             return message;
         }
+
+        public async Task DeleteRoleAsync(int id)
+        {
+            var roles = await _roleManager.FindByIdAsync(id.ToString());
+            await _roleManager.DeleteAsync(roles);
+        }
     }
 }

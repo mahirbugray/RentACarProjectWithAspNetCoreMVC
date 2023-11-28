@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ROG\\Desktop\\BahcesehirEgitim\\BAU-Proje\\BAU-Project_RentACarPortal\\BAU-Project_RentACarPortal.App.Entity\\BAU-Project_RentACarPortal.App.Entity.csproj": {}
+    "C:\\Users\\ROG\\Desktop\\BahcesehirEgitim\\Proje Grup3 Mahir-Çağatay-Şehit\\BAU-Project_RentACarPortal\\BAU-Project_RentACarPortal.App.Entity\\BAU-Project_RentACarPortal.App.Entity.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ROG\\Desktop\\BahcesehirEgitim\\BAU-Proje\\BAU-Project_RentACarPortal\\BAU-Project_RentACarPortal.App.Entity\\BAU-Project_RentACarPortal.App.Entity.csproj": {
+    "C:\\Users\\ROG\\Desktop\\BahcesehirEgitim\\Proje Grup3 Mahir-Çağatay-Şehit\\BAU-Project_RentACarPortal\\BAU-Project_RentACarPortal.App.Entity\\BAU-Project_RentACarPortal.App.Entity.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ROG\\Desktop\\BahcesehirEgitim\\BAU-Proje\\BAU-Project_RentACarPortal\\BAU-Project_RentACarPortal.App.Entity\\BAU-Project_RentACarPortal.App.Entity.csproj",
+        "projectUniqueName": "C:\\Users\\ROG\\Desktop\\BahcesehirEgitim\\Proje Grup3 Mahir-Çağatay-Şehit\\BAU-Project_RentACarPortal\\BAU-Project_RentACarPortal.App.Entity\\BAU-Project_RentACarPortal.App.Entity.csproj",
         "projectName": "BAU-Project_RentACarPortal.App.Entity",
-        "projectPath": "C:\\Users\\ROG\\Desktop\\BahcesehirEgitim\\BAU-Proje\\BAU-Project_RentACarPortal\\BAU-Project_RentACarPortal.App.Entity\\BAU-Project_RentACarPortal.App.Entity.csproj",
+        "projectPath": "C:\\Users\\ROG\\Desktop\\BahcesehirEgitim\\Proje Grup3 Mahir-Çağatay-Şehit\\BAU-Project_RentACarPortal\\BAU-Project_RentACarPortal.App.Entity\\BAU-Project_RentACarPortal.App.Entity.csproj",
         "packagesPath": "C:\\Users\\ROG\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ROG\\Desktop\\BahcesehirEgitim\\BAU-Proje\\BAU-Project_RentACarPortal\\BAU-Project_RentACarPortal.App.Entity\\obj\\",
+        "outputPath": "C:\\Users\\ROG\\Desktop\\BahcesehirEgitim\\Proje Grup3 Mahir-Çağatay-Şehit\\BAU-Project_RentACarPortal\\BAU-Project_RentACarPortal.App.Entity\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ROG\\AppData\\Roaming\\NuGet\\NuGet.Config",

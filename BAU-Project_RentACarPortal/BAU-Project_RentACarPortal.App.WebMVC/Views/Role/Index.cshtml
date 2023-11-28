@@ -24,7 +24,7 @@
 <h4 class="text-center">Roller</h4>
 <hr />
 <p>
-    <a asp-action="Create" asp-controller="Role">Yeni Rol Ekle</a>
+    <a asp-action="Create" asp-controller="Role" class="btn btn-success">Yeni Rol Ekle</a>
 </p>
 <table class="table">
     <thead>
@@ -53,8 +53,8 @@
                         @Html.DisplayFor(modelItem => item.Description)
                     </td>
                     <td>
-                        <a asp-action="Edit" asp-controller="Role" asp-area="Admin" asp-route-id="@item.Id">Edit</a> |
-                        <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                        <a asp-action="Edit" asp-controller="Role" asp-area="Admin" asp-route-id="@item.Id" class="btn btn-warning my-3">Edit</a>
+                        <a asp-action="Delete" asp-controller="Role" asp-route-id="@item.Id" class="btn btn-danger">Delete</a>
                     </td>
                 </tr>
             }

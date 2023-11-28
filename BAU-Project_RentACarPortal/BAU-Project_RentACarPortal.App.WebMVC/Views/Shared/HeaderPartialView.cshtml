@@ -30,6 +30,12 @@
                                 ]
                             </a>
                     </li>
+                    @if (User.IsInRole("Admin"))
+                    {
+                        <li class="nav-item">
+                            <a asp-controller="Admin" asp-action="Index" class="nav-link"> Admin Paneline Geç</a>
+                        </li>
+                    }
                     <li class="nav-item">
                         <a asp-controller="Account" asp-action="Logout" class="nav-link"> Çıkış  </a>
                     </li>

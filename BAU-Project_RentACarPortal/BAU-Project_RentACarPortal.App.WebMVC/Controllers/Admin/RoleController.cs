@@ -56,5 +56,12 @@ namespace BAU_Project_RentACarPortal.App.WebMVC.Controllers.Admin
             }
             return RedirectToAction("Edit", "Role", new { id = model.RoleId });
         }
+        [HttpGet]
+        public async Task<IActionResult> Delete(int id)
+        {
+            await _accountService.DeleteRoleAsync(id);
+            return RedirectToAction("Index", "Role");
+        }
     }
 }
+

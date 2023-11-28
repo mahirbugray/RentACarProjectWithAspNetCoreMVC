@@ -24,5 +24,7 @@ namespace BAU_Project_RentACarPortal.App.Entity.Services
         Task<RoleViewModel> FindByIdAsync(string id);
         Task<UsersInOrOutViewModel> GetAllUsersByRole(string id);
         Task<string> EditRoleListAsync(EditRoleViewModel model);
+        Task DeleteRoleAsync(int id);
+
     }
 }

@@ -12197,11 +12197,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ROG\\Desktop\\BahcesehirEgitim\\BAU-Proje\\BAU-Project_RentACarPortal\\BAU-Project_RentACarPortal.App.WebMVC\\BAU-Project_RentACarPortal.App.WebMVC.csproj",
+      "projectUniqueName": "C:\\Users\\ROG\\Desktop\\BahcesehirEgitim\\Proje Grup3 Mahir-Çağatay-Şehit\\BAU-Project_RentACarPortal\\BAU-Project_RentACarPortal.App.WebMVC\\BAU-Project_RentACarPortal.App.WebMVC.csproj",
       "projectName": "BAU-Project_RentACarPortal.App.WebMVC",
-      "projectPath": "C:\\Users\\ROG\\Desktop\\BahcesehirEgitim\\BAU-Proje\\BAU-Project_RentACarPortal\\BAU-Project_RentACarPortal.App.WebMVC\\BAU-Project_RentACarPortal.App.WebMVC.csproj",
+      "projectPath": "C:\\Users\\ROG\\Desktop\\BahcesehirEgitim\\Proje Grup3 Mahir-Çağatay-Şehit\\BAU-Project_RentACarPortal\\BAU-Project_RentACarPortal.App.WebMVC\\BAU-Project_RentACarPortal.App.WebMVC.csproj",
       "packagesPath": "C:\\Users\\ROG\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ROG\\Desktop\\BahcesehirEgitim\\BAU-Proje\\BAU-Project_RentACarPortal\\BAU-Project_RentACarPortal.App.WebMVC\\obj\\",
+      "outputPath": "C:\\Users\\ROG\\Desktop\\BahcesehirEgitim\\Proje Grup3 Mahir-Çağatay-Şehit\\BAU-Project_RentACarPortal\\BAU-Project_RentACarPortal.App.WebMVC\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ROG\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -12218,8 +12218,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\ROG\\Desktop\\BahcesehirEgitim\\BAU-Proje\\BAU-Project_RentACarPortal\\BAU-Project_RentACarPortal.App.Service\\BAU-Project_RentACarPortal.App.Service.csproj": {
-              "projectPath": "C:\\Users\\ROG\\Desktop\\BahcesehirEgitim\\BAU-Proje\\BAU-Project_RentACarPortal\\BAU-Project_RentACarPortal.App.Service\\BAU-Project_RentACarPortal.App.Service.csproj"
+            "C:\\Users\\ROG\\Desktop\\BahcesehirEgitim\\Proje Grup3 Mahir-Çağatay-Şehit\\BAU-Project_RentACarPortal\\BAU-Project_RentACarPortal.App.Service\\BAU-Project_RentACarPortal.App.Service.csproj": {
+              "projectPath": "C:\\Users\\ROG\\Desktop\\BahcesehirEgitim\\Proje Grup3 Mahir-Çağatay-Şehit\\BAU-Project_RentACarPortal\\BAU-Project_RentACarPortal.App.Service\\BAU-Project_RentACarPortal.App.Service.csproj"
             }
           }
         }
